@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Inference infrastructure by shipiyouniao</title>
+  <desc id="desc">An animated request path flowing through scheduling, KV cache, and GPU execution.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#25304a" stroke-width="1" opacity="0.5" />
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#19c2c9" />
+      <stop offset="0.55" stop-color="#78dba9" />
+      <stop offset="1" stop-color="#f2b84b" />
+    </linearGradient>
+    <path id="flow-path" d="M 642 218 C 700 218, 708 160, 768 160 S 842 252, 906 252 S 994 194, 1064 194" />
+  </defs>
+
+  <rect width="1200" height="360" rx="18" fill="#0b1020" />
+  <rect width="1200" height="360" rx="18" fill="url(#grid)" />
+  <path d="M 0 302 C 214 238, 326 346, 526 292 S 836 266, 1200 316 L 1200 360 L 0 360 Z" fill="#121a2d" opacity="0.92" />
+  <path d="M 0 302 C 214 238, 326 346, 526 292 S 836 266, 1200 316" fill="none" stroke="#263654" stroke-width="2" />
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="64" y="76" fill="#8fa4c7" font-size="15" font-weight="700" letter-spacing="2">SYSTEMS / INFERENCE / RUNTIME</text>
+    <text x="64" y="136" fill="#f4f7fb" font-size="48" font-weight="750">shipiyouniao</text>
+    <text x="64" y="176" fill="#b8c4d9" font-size="21">Building elastic GPU infrastructure</text>
+    <text x="64" y="207" fill="#b8c4d9" font-size="21">for predictable LLM serving.</text>
+
+    <g transform="translate(64 246)">
+      <rect width="116" height="34" rx="6" fill="#15243a" stroke="#19c2c9" stroke-opacity="0.7" />
+      <circle cx="18" cy="17" r="4" fill="#19c2c9" />
+      <text x="32" y="22" fill="#d9e8f4" font-size="13" font-weight="650">KV CACHE</text>
+    </g>
+    <g transform="translate(192 246)">
+      <rect width="96" height="34" rx="6" fill="#202238" stroke="#f2b84b" stroke-opacity="0.7" />
+      <circle cx="18" cy="17" r="4" fill="#f2b84b" />
+      <text x="32" y="22" fill="#f1e3c4" font-size="13" font-weight="650">CUDA</text>
+    </g>
+    <g transform="translate(300 246)">
+      <rect width="102" height="34" rx="6" fill="#17283a" stroke="#78dba9" stroke-opacity="0.7" />
+      <circle cx="18" cy="17" r="4" fill="#78dba9" />
+      <text x="32" y="22" fill="#d7eee2" font-size="13" font-weight="650">RUNTIME</text>
+    </g>
+
+    <g transform="translate(620 68)">
+      <text x="0" y="0" fill="#7185a7" font-size="12" font-weight="700" letter-spacing="1.5">LIVE DATA PATH</text>
+
+      <g transform="translate(0 116)">
+        <circle cx="22" cy="34" r="22" fill="#14243a" stroke="#19c2c9" stroke-width="2" />
+        <path d="M 14 27 L 30 27 M 14 34 L 30 34 M 14 41 L 25 41" stroke="#b9f3f1" stroke-width="2" stroke-linecap="round" />
+        <text x="0" y="76" fill="#8fa4c7" font-size="12">REQUEST</text>
+      </g>
+
+      <g transform="translate(132 58)">
+        <rect width="126" height="70" rx="8" fill="#141d31" stroke="#436183" />
+        <path d="M 22 24 H 104 M 22 35 H 78 M 22 46 H 91" stroke="#78dba9" stroke-width="3" stroke-linecap="round" />
+        <text x="17" y="92" fill="#8fa4c7" font-size="12">SCHEDULER</text>
+      </g>
+
+      <g transform="translate(286 150)">
+        <rect width="126" height="70" rx="8" fill="#172033" stroke="#4a6485" />
+        <rect x="18" y="18" width="24" height="14" rx="3" fill="#19c2c9" />
+        <rect x="48" y="18" width="24" height="14" rx="3" fill="#305174" />
+        <rect x="78" y="18" width="30" height="14" rx="3" fill="#f2b84b" />
+        <rect x="18" y="39" width="38" height="14" rx="3" fill="#78dba9" />
+        <rect x="62" y="39" width="46" height="14" rx="3" fill="#305174" />
+        <text x="24" y="92" fill="#8fa4c7" font-size="12">KV POOL</text>
+      </g>
+
+      <g transform="translate(444 92)">
+        <rect width="126" height="70" rx="8" fill="#201f2d" stroke="#786336" />
+        <rect x="19" y="16" width="88" height="38" rx="5" fill="none" stroke="#f2b84b" stroke-width="2" />
+        <path d="M 31 25 H 95 M 31 35 H 95 M 31 45 H 72" stroke="#f7d58c" stroke-width="3" stroke-linecap="round" />
+        <text x="38" y="92" fill="#8fa4c7" font-size="12">GPU</text>
+      </g>
+    </g>
+
+    <use href="#flow-path" fill="none" stroke="#334969" stroke-width="3" stroke-linecap="round" />
+    <use href="#flow-path" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 14" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" from="44" to="0" dur="1.8s" repeatCount="indefinite" />
+    </use>
+
+    <circle r="6" fill="#19c2c9" filter="url(#glow)">
+      <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flow-path" />
+      </animateMotion>
+    </circle>
+    <circle r="5" fill="#f2b84b" filter="url(#glow)">
+      <animateMotion dur="3.6s" begin="-1.8s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flow-path" />
+      </animateMotion>
+    </circle>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="358" rx="17" fill="none" stroke="#33415f" stroke-width="2" />
+</svg>
