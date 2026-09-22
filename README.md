@@ -5,11 +5,14 @@
 <h1 align="center">石皮幼鸟 · shipiyouniao</h1>
 
 <p align="center">
-  AI infrastructure engineer at Sangfor Technologies.<br />
+  Full-stack engineer at Sangfor Technologies, currently focused on AI infrastructure.<br />
   One of the maintainers of <a href="https://github.com/ovg-project/kvcached">KVCached</a>, with a focus on LLM inference and GPU memory management.
 </p>
 
-I work on inference systems, from KV cache allocation and GPU memory mapping to
+I build frontend and backend applications, and particularly enjoy working with C#.
+I also like making games, both in Unity and for the browser.
+
+My current work spans inference systems, from KV cache allocation and GPU memory mapping to
 engine integration and production observability. I contribute to vLLM and SGLang
 alongside my work on KVCached.
 
@@ -29,6 +32,9 @@ and comparing behavior and performance on hardware.
 
 ### Other projects
 
+- [Minefarer](https://github.com/shipiyouniao/minefarer): a Minesweeper adventure
+  with exploration, puzzles, and a story campaign.
+  [Play in your browser](https://shipiyouniao.github.io/minefarer/).
 - **NNRP** at [NagareWorks](https://github.com/NagareWorks): a runtime protocol
   project with [Rust](https://github.com/NagareWorks/nnrp-rs),
   [Python](https://github.com/NagareWorks/nnrp-py), and
@@ -38,15 +44,11 @@ and comparing behavior and performance on hardware.
 
 ### Toolbox
 
-<p>
-  <img src="https://img.shields.io/badge/CUDA-111827?style=flat-square&logo=nvidia&logoColor=76B900" alt="CUDA" />
-  <img src="https://img.shields.io/badge/C%2B%2B-111827?style=flat-square&logo=cplusplus&logoColor=5C8DBC" alt="C++" />
-  <img src="https://img.shields.io/badge/Rust-111827?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=FFD43B" alt="Python" />
-  <img src="https://img.shields.io/badge/Go-111827?style=flat-square&logo=go&logoColor=00ADD8" alt="Go" />
-  <img src="https://img.shields.io/badge/Kubernetes-111827?style=flat-square&logo=kubernetes&logoColor=6D91ED" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/PyTorch-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C" alt="PyTorch" />
-</p>
+- **Frontend:** TypeScript, JavaScript, HTML, CSS, Vite, Tailwind CSS.
+- **Backend and runtimes:** C# / .NET, Python, Go, Rust.
+- **Systems and inference:** C++, CUDA, PyTorch, vLLM, SGLang.
+- **Infrastructure and monitoring:** Linux, Docker, Kubernetes, Prometheus, Grafana.
+- **Game development:** Unity / C#, browser games.
 
 ### Contact
 
