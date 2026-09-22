@@ -5,37 +5,36 @@
 <h1 align="center">石皮幼鸟 · shipiyouniao</h1>
 
 <p align="center">
-  AI infrastructure engineer on Sangfor's Managed Cloud Platform team,<br />
-  building predictable LLM serving, elastic GPU memory, and runtime protocols.
+  AI infrastructure engineer at Sangfor Technologies.<br />
+  One of the maintainers of <a href="https://github.com/ovg-project/kvcached">KVCached</a>, with a focus on LLM inference and GPU memory management.
 </p>
 
-<p align="center">
-  <a href="https://github.com/NagareWorks"><img src="https://img.shields.io/badge/NagareWorks-111827?style=flat-square&logo=github&logoColor=white" alt="NagareWorks" /></a>
-</p>
+I work on inference systems, from KV cache allocation and GPU memory mapping to
+engine integration and production observability. I contribute to vLLM and SGLang
+alongside my work on KVCached.
 
-I work where inference engines, GPU runtimes, and cloud-native control planes meet.
-My current focus is making shared accelerators behave like dependable infrastructure:
-correct under pressure, observable in production, and fast on real workloads.
+I spend much of my time tracing failures, building reproducers,
+and comparing behavior and performance on hardware.
 
 ### Current work
 
-- **LLM serving:** vLLM and SGLang integration, long-context inference, PD multiplexing,
-  CUDA execution paths, and correctness-first performance analysis.
-- **Elastic GPU memory:** KV cache pooling, CUDA VMM, quota and reclamation policy,
-  multi-instance isolation, MPS, and shared model weights.
-- **Runtime protocols:** building [NNRP](https://github.com/NagareWorks) across Rust,
-  Python, and C# with deterministic transports and explicit lifecycle semantics.
-- **Cloud native:** Kubernetes-oriented placement, observability, recovery, and
-  platform integration for production inference systems.
+- **GPU memory:** elastic KV allocation, prefix-cache correctness,
+  transactional mapping, and safe memory reclamation across workers.
+- **Engine compatibility:** adapting to vLLM and SGLang releases, model cache
+  layouts, and changes to scheduling and execution paths.
+- **Observability:** allocator snapshots, serving metrics, and diagnostics for
+  memory pressure and allocation failures.
+- **Validation and automation:** hardware-backed regression tests, fault injection,
+  reproducible benchmarks, and automated compatibility checks.
 
-### Selected work
+### Other projects
 
-| Area | Project | What I work on |
-| --- | --- | --- |
-| Runtime protocol | [NagareWorks/nnrp-rs](https://github.com/NagareWorks/nnrp-rs) | Native transport and lifecycle runtime |
-| SDK | [NagareWorks/nnrp-py](https://github.com/NagareWorks/nnrp-py) | Python runtime bindings and release engineering |
-| SDK | [NagareWorks/nnrp-cs](https://github.com/NagareWorks/nnrp-cs) | C# protocol SDK and native transport integration |
-| Unity tooling | [UnityEasyInject](https://github.com/shipiyouniao/UnityEasyInject) | Lightweight dependency injection for Unity |
+- **NNRP** at [NagareWorks](https://github.com/NagareWorks): a runtime protocol
+  project with [Rust](https://github.com/NagareWorks/nnrp-rs),
+  [Python](https://github.com/NagareWorks/nnrp-py), and
+  [C#](https://github.com/NagareWorks/nnrp-cs) implementations.
+- [UnityEasyInject](https://github.com/shipiyouniao/UnityEasyInject): lightweight
+  dependency injection for Unity.
 
 ### Toolbox
 
@@ -49,4 +48,6 @@ correct under pressure, observable in production, and fast on real workloads.
   <img src="https://img.shields.io/badge/PyTorch-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C" alt="PyTorch" />
 </p>
 
-> Measure the real path. Preserve the invariants. Optimize what remains.
+### Contact
+
+[2960474346@qq.com](mailto:2960474346@qq.com)
